@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .btn{
+            display: inline;
+            position: relative;
+            border: 2px solid #ff3838;
+            border-radius: 6px;
+            padding: 10px 24px;
+            outline: none;
+            cursor: pointer;
+            overflow: hidden;
+            color: #ff3838;
+            z-index: -1;
+         }
+         .btn::before{
+            content: "";
+            position:absolute;
+            top: 0;
+            right: 0;
+            width: 0%;
+            height: 100%;
+            transition: .3s linear;
+            z-index: 1;
+            background: #ff3838;
+         }
+         .btn:hover::before{
+            width: 100%;
+            left: 0;
+         }
+         .Speciality .box-container{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+         }
+         .Speciality .box-container .box{
+            flex: 1 1 30rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);;
+            border: .1rem solid #000;
+            cursor: pointer;
+            border-radius: 8px;
+         }
+         .Speciality .box-container .box .image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+            position: absolute;
+            top: -100%; left: 0; 
+         }
+         .Speciality .box-container .box .content{
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+         }
+         .Speciality .box-container .box .content img{
+             margin: 1.5rem 0;
+         }
+         .Speciality .box-container .box:hover .image{
+  top:0;
+}
+         .Speciality .box-container .box:hover .content{
+             transform: translateY(100%);
+         }
+    </style>
+</head>
+<body>
+    <div class="btn">Suscribe</div>
+    <!--Speciality section starts----->
+
+    <section class="Speciality" id="Speciality">
+
+      <h1 class="heading"> our <span>Speciality</span> </h1>
+
+      <div class="box-container">
+
+        <div class="box">
+          <img class="image" src="images/s-img-1.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-1.png" alt="" />
+            <h3>tasty burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="image" src="images/s-img-2.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-2.png" alt="" />
+            <h3>tasty pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="image" src="images/s-img-3.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-3.png" alt="" />
+            <h3>ice-cream</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="image" src="images/s-img-4.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-4.png" alt="" />
+            <h3>Cold drinks</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="image" src="images/s-img-5.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-5.png" alt="" />
+            <h3>testy sweets</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="image" src="images/s-img-6.jpg" alt="" />
+          <div class="content">
+            <img src="images/s-6.png" alt="" />
+            <h3>healthy Breakfast</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+              ipsum, dignissimos error quod libero!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----Speciality section ends------>
+
+   </body>
+</html>
